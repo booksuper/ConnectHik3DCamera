@@ -1,0 +1,31 @@
+[2021-08-19 10:50:18:0155] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2021-08-19 10:50:18:0155] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2021-08-19 10:50:18:0155] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Users\user\Desktop\MvStereoAppCtrlSDK\SDK\C\dll\win64\MvStereoAppCtrl.dll]
+[2021-08-19 10:50:18:0156] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\MvStereoAppCtrlSDK\SDK\C\dll\win64\BasicDemo_F_DepthToPointCloud.exe]
+[2021-08-19 10:50:18:0156] | Info     | Manager.cpp              -L4039: Config (C:\Users\user\Desktop\MvStereoAppCtrlSDK\SDK\C\dll\win64\MvStereoAppCtrlCfg.ini) exist .
+[2021-08-19 10:50:18:0156] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2021-08-19 10:50:18:0156] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2021-08-19 10:50:18:0349] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2021-08-19 10:50:18:0378] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2021-08-19 10:50:18:0378] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2021-08-19 10:50:18:0378] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2021-08-19 10:50:18:0378] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2021-08-19 10:50:18:0378] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2021-08-19 10:50:18:0395] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2021-08-19 10:50:18:0395] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2021-08-19 10:50:18:0395] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2021-08-19 10:50:18:0395] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2021-08-19 10:50:18:0396] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2021-08-19 10:50:18:0733] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2021-08-19 10:50:18:0734] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2021-08-19 10:50:18:0734] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2021-08-19 10:50:18:0734] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2021-08-19 10:50:18:0735] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Users\user\Desktop\MvStereoAppCtrlSDK\SDK\C\dll\win64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2021-08-19 10:50:18:0735] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2021-08-19 10:50:18:0735] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2021-08-19 10:52:55:0348] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2021-08-19 10:52:55:0348] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2021-08-19 10:52:55:0348] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2021-08-19 10:52:55:0348] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2021-08-19 10:52:55:0348] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2021-08-19 10:52:55:0506] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
