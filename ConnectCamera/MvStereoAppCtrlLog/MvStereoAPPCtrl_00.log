@@ -19748,3 +19748,1128 @@
 [2022-01-08 10:55:06:0262] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
 [2022-01-08 10:55:06:0262] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
 [2022-01-08 10:55:06:0501] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 14:41:04:0737] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 14:41:04:0738] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 14:41:04:0738] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 14:41:04:0738] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 14:41:04:0738] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 14:41:04:0738] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 14:41:04:0738] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 14:41:05:0170] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 14:41:05:0227] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 14:41:05:0227] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 14:41:05:0227] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 14:41:05:0227] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 14:41:05:0228] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 14:41:05:0263] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 14:41:05:0263] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 14:41:05:0263] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 14:41:05:0263] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 14:41:05:0263] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 14:41:05:0467] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 14:41:05:0467] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 14:41:05:0467] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 14:41:05:0467] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 14:41:05:0467] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 14:41:05:0467] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 14:41:05:0467] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 14:41:11:0617] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 14:41:11:0617] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 14:41:11:0618] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 14:41:11:0618] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 14:41:11:0618] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 14:41:11:0618] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 14:41:11:0618] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 14:41:11:0618] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 14:41:11:0618] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 14:41:11:0619] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 14:41:11:0619] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 14:41:11:0620] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 14:41:11:0620] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 14:41:11:0620] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 14:41:11:0620] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 14:41:11:0620] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 14:41:11:0620] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 14:41:11:0620] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 14:41:11:0621] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 14:41:11:0621] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 14:41:11:0622] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 14:41:11:0623] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 14:41:11:0623] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 14:41:11:0623] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 14:41:11:0623] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 14:41:11:0623] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 14:41:11:0624] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 14:41:11:0624] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 14:41:11:0624] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 14:41:11:0624] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 14:41:11:0624] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 14:41:11:0624] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 14:41:11:0624] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 14:41:11:0625] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 14:41:11:0625] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 14:41:11:0625] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 14:41:11:0625] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 14:41:11:0625] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 14:41:11:0625] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 14:41:11:0626] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 14:41:11:0626] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 14:41:11:0626] | Info     | Manager.cpp              -L5796: [HfrMallocOutputBuffer] end.
+[2022-07-05 14:41:11:0626] | Info     | Manager.cpp              -L1982: [Start] IsHFRProfileMode.
+[2022-07-05 14:41:11:0662] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 14:41:11:0662] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 14:41:11:0662] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 14:41:29:0752] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [1825].
+[2022-07-05 14:41:46:0248] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1843] to [1851].
+[2022-07-05 14:41:46:0669] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1851] to [1860].
+[2022-07-05 14:41:47:0087] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1860] to [1868].
+[2022-07-05 14:41:47:0522] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1868] to [1876].
+[2022-07-05 14:41:47:0940] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1876] to [1884].
+[2022-07-05 14:41:48:0368] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1884] to [1893].
+[2022-07-05 14:41:48:0792] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1893] to [1901].
+[2022-07-05 14:41:49:0208] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1901] to [1909].
+[2022-07-05 14:41:49:0658] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1909] to [1918].
+[2022-07-05 14:41:50:0097] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1918] to [1927].
+[2022-07-05 14:41:50:0535] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1927] to [1935].
+[2022-07-05 14:41:50:0972] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1935] to [1944].
+[2022-07-05 14:41:51:0406] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1944] to [1952].
+[2022-07-05 14:41:51:0822] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1952] to [1960].
+[2022-07-05 14:41:52:0258] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1960] to [1969].
+[2022-07-05 14:41:52:0698] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1969] to [1978].
+[2022-07-05 14:41:53:0126] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1978] to [1986].
+[2022-07-05 14:41:53:0572] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1986] to [1995].
+[2022-07-05 14:41:54:0023] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[1995] to [2004].
+[2022-07-05 14:41:54:0453] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2004] to [2012].
+[2022-07-05 14:41:54:0902] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2012] to [2021].
+[2022-07-05 14:41:55:0465] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2021] to [2032].
+[2022-07-05 14:41:56:0036] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2032] to [2043].
+[2022-07-05 14:41:56:0521] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2043] to [2052].
+[2022-07-05 14:41:56:0955] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2052] to [2061].
+[2022-07-05 14:41:57:0387] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2061] to [2069].
+[2022-07-05 14:41:57:0829] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2069] to [2078].
+[2022-07-05 14:41:58:0262] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2078] to [2087].
+[2022-07-05 14:41:58:0694] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2087] to [2095].
+[2022-07-05 14:41:59:0122] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2095] to [2103].
+[2022-07-05 14:41:59:0546] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2103] to [2112].
+[2022-07-05 14:41:59:0976] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2112] to [2120].
+[2022-07-05 14:42:00:0415] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2120] to [2129].
+[2022-07-05 14:42:00:0858] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2129] to [2137].
+[2022-07-05 14:42:01:0280] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2137] to [2146].
+[2022-07-05 14:42:01:0697] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2146] to [2154].
+[2022-07-05 14:42:02:0117] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2154] to [2162].
+[2022-07-05 14:42:02:0560] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2162] to [2171].
+[2022-07-05 14:42:02:0997] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2171] to [2179].
+[2022-07-05 14:42:03:0430] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2179] to [2188].
+[2022-07-05 14:42:03:0860] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2188] to [2196].
+[2022-07-05 14:42:04:0279] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2196] to [2204].
+[2022-07-05 14:42:04:0697] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2204] to [2213].
+[2022-07-05 14:42:05:0120] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2213] to [2221].
+[2022-07-05 14:42:05:0551] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2221] to [2229].
+[2022-07-05 14:42:05:0972] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2229] to [2238].
+[2022-07-05 14:42:06:0388] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2238] to [2246].
+[2022-07-05 14:42:06:0832] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2246] to [2254].
+[2022-07-05 14:42:07:0268] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2254] to [2263].
+[2022-07-05 14:42:07:0726] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2263] to [2272].
+[2022-07-05 14:42:08:0144] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2272] to [2280].
+[2022-07-05 14:42:08:0576] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2280] to [2289].
+[2022-07-05 14:42:09:0006] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2289] to [2297].
+[2022-07-05 14:42:09:0426] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2297] to [2305].
+[2022-07-05 14:42:09:0843] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2305] to [2313].
+[2022-07-05 14:42:10:0272] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2313] to [2322].
+[2022-07-05 14:42:10:0704] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2322] to [2330].
+[2022-07-05 14:42:11:0123] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2330] to [2338].
+[2022-07-05 14:42:11:0545] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2338] to [2347].
+[2022-07-05 14:42:11:0962] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2347] to [2355].
+[2022-07-05 14:42:12:0394] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2355] to [2363].
+[2022-07-05 14:42:12:0837] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2363] to [2372].
+[2022-07-05 14:42:13:0265] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2372] to [2380].
+[2022-07-05 14:42:13:0681] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2380] to [2388].
+[2022-07-05 14:42:14:0098] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2388] to [2397].
+[2022-07-05 14:42:14:0516] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2397] to [2405].
+[2022-07-05 14:42:14:0951] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2405] to [2413].
+[2022-07-05 14:42:15:0375] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2413] to [2422].
+[2022-07-05 14:42:15:0798] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2422] to [2430].
+[2022-07-05 14:42:16:0213] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2430] to [2438].
+[2022-07-05 14:42:16:0651] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2438] to [2447].
+[2022-07-05 14:42:17:0081] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2447] to [2455].
+[2022-07-05 14:42:17:0515] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2455] to [2464].
+[2022-07-05 14:42:17:0947] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2464] to [2472].
+[2022-07-05 14:42:18:0372] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2472] to [2480].
+[2022-07-05 14:42:18:0800] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2480] to [2489].
+[2022-07-05 14:42:19:0217] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2489] to [2497].
+[2022-07-05 14:42:19:0648] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2497] to [2505].
+[2022-07-05 14:42:20:0067] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2505] to [2514].
+[2022-07-05 14:42:20:0494] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2514] to [2522].
+[2022-07-05 14:42:20:0919] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2522] to [2530].
+[2022-07-05 14:42:21:0348] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2530] to [2539].
+[2022-07-05 14:42:21:0778] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2539] to [2547].
+[2022-07-05 14:42:22:0209] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2547] to [2555].
+[2022-07-05 14:42:22:0639] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2555] to [2564].
+[2022-07-05 14:42:23:0058] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2564] to [2572].
+[2022-07-05 14:42:23:0477] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2572] to [2580].
+[2022-07-05 14:42:23:0914] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2580] to [2589].
+[2022-07-05 14:42:24:0347] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2589] to [2597].
+[2022-07-05 14:42:24:0768] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2597] to [2606].
+[2022-07-05 14:42:25:0192] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2606] to [2614].
+[2022-07-05 14:42:25:0609] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2614] to [2622].
+[2022-07-05 14:42:26:0037] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2622] to [2630].
+[2022-07-05 14:42:26:0458] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2630] to [2639].
+[2022-07-05 14:42:26:0881] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2639] to [2647].
+[2022-07-05 14:42:27:0300] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2647] to [2655].
+[2022-07-05 14:42:27:0766] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2655] to [2664].
+[2022-07-05 14:42:28:0229] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2664] to [2673].
+[2022-07-05 14:42:28:0648] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2673] to [2682].
+[2022-07-05 14:42:29:0069] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2682] to [2690].
+[2022-07-05 14:42:29:0503] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2690] to [2698].
+[2022-07-05 14:42:29:0925] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2698] to [2707].
+[2022-07-05 14:42:30:0349] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2707] to [2715].
+[2022-07-05 14:42:30:0769] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2715] to [2723].
+[2022-07-05 14:42:31:0195] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2723] to [2731].
+[2022-07-05 14:42:31:0612] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2731] to [2740].
+[2022-07-05 14:42:32:0047] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2740] to [2748].
+[2022-07-05 14:42:32:0468] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2748] to [2756].
+[2022-07-05 14:42:32:0886] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2756] to [2765].
+[2022-07-05 14:42:33:0307] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2765] to [2773].
+[2022-07-05 14:42:33:0736] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2773] to [2781].
+[2022-07-05 14:42:34:0159] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2781] to [2789].
+[2022-07-05 14:42:34:0578] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2789] to [2798].
+[2022-07-05 14:42:34:0999] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2798] to [2806].
+[2022-07-05 14:42:35:0457] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2806] to [2815].
+[2022-07-05 14:42:35:0888] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2815] to [2823].
+[2022-07-05 14:42:36:0320] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2823] to [2832].
+[2022-07-05 14:42:36:0752] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2832] to [2840].
+[2022-07-05 14:42:37:0179] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2840] to [2849].
+[2022-07-05 14:42:37:0610] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2849] to [2857].
+[2022-07-05 14:42:38:0029] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2857] to [2865].
+[2022-07-05 14:42:38:0466] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2865] to [2874].
+[2022-07-05 14:42:38:0895] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[2874] to [2882].
+[2022-07-05 14:53:33:0763] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 14:53:33:0764] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 14:53:33:0764] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 14:53:33:0764] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 14:53:33:0764] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 14:53:33:0764] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 14:53:33:0764] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 14:53:33:0797] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 14:53:33:0803] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 14:53:33:0803] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 14:53:33:0803] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 14:53:33:0803] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 14:53:33:0803] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 14:53:33:0816] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 14:53:33:0816] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 14:53:33:0816] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 14:53:33:0816] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 14:53:33:0816] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 14:53:34:0113] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 14:53:34:0113] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 14:53:34:0113] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 14:53:34:0113] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 14:53:34:0113] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 14:53:34:0113] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 14:53:34:0113] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 14:53:38:0001] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 14:53:38:0002] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 14:53:38:0003] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 14:53:38:0003] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 14:53:38:0004] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 14:53:38:0005] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 14:53:38:0005] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 14:53:38:0006] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 14:53:38:0006] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 14:53:38:0006] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 14:53:38:0006] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 14:53:38:0007] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 14:53:38:0008] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 14:53:38:0008] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 14:53:38:0008] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 14:53:38:0008] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 14:53:38:0008] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 14:53:38:0008] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 14:53:38:0008] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 14:53:38:0008] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 14:53:38:0008] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 14:53:38:0008] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 14:53:38:0043] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 14:53:38:0044] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 14:53:38:0044] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 14:54:07:0079] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [2915].
+[2022-07-05 15:00:09:0922] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 15:00:10:0042] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 15:00:10:0042] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 15:00:10:0043] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 15:00:10:0043] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 15:00:10:0043] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 15:00:10:0043] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 15:00:10:0043] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 15:00:12:0282] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 15:00:12:0282] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 15:00:12:0282] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 15:00:12:0282] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 15:00:12:0282] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 15:00:12:0418] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 15:00:12:0430] | Info     | CameraModule.cpp         -L0541: [DeInit] MV_CC_DestroyHandle success.
+[2022-07-05 15:00:12:0431] | Info     | CameraModule.cpp         -L0553: [DeInit] end success.
+[2022-07-05 15:00:12:0431] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 15:00:12:0431] | Info     | CameraModule.cpp         -L0553: [DeInit] end success.
+[2022-07-05 16:20:05:0890] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 16:20:05:0891] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 16:20:05:0891] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 16:20:05:0891] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 16:20:05:0891] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 16:20:05:0891] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 16:20:05:0891] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 16:20:05:0921] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 16:20:05:0927] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 16:20:05:0927] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 16:20:05:0927] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 16:20:05:0927] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 16:20:05:0927] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 16:20:05:0942] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 16:20:05:0942] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 16:20:05:0942] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 16:20:05:0942] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 16:20:05:0942] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 16:20:06:0236] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 16:20:06:0237] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 16:20:06:0237] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 16:20:06:0237] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 16:20:06:0237] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 16:20:06:0237] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 16:20:06:0237] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 16:20:07:0753] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 16:20:07:0754] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 16:20:07:0755] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 16:20:07:0755] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 16:20:07:0756] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 16:20:07:0756] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 16:20:07:0756] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 16:20:07:0756] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 16:20:07:0756] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 16:20:07:0756] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 16:20:07:0756] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 16:20:07:0757] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 16:20:07:0757] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 16:20:07:0757] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 16:20:07:0758] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 16:20:07:0758] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 16:20:07:0758] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 16:20:07:0759] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 16:20:07:0760] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L5747: [HfrMallocOutputBuffer] begin.
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L5796: [HfrMallocOutputBuffer] end.
+[2022-07-05 16:20:07:0760] | Info     | Manager.cpp              -L1982: [Start] IsHFRProfileMode.
+[2022-07-05 16:20:07:0795] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 16:20:07:0796] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 16:20:07:0796] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 16:20:18:0877] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [2920].
+[2022-07-05 16:23:21:0640] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 16:23:21:0760] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 16:23:21:0760] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 16:23:21:0761] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 16:23:21:0761] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 16:23:21:0761] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 16:23:21:0761] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 16:23:21:0761] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 16:23:26:0483] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 16:23:26:0483] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 16:23:26:0483] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 16:23:26:0483] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 16:23:26:0483] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 16:23:26:0665] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 16:47:03:0282] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 16:47:03:0283] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 16:47:03:0283] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 16:47:03:0283] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 16:47:03:0283] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 16:47:03:0283] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 16:47:03:0283] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 16:47:03:0318] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 16:47:03:0325] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 16:47:03:0325] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 16:47:03:0325] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 16:47:03:0325] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 16:47:03:0325] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 16:47:03:0339] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 16:47:03:0339] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 16:47:03:0339] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 16:47:03:0339] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 16:47:03:0339] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 16:47:03:0644] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 16:47:03:0644] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 16:47:03:0644] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 16:47:03:0644] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 16:47:03:0644] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 16:47:03:0644] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 16:47:03:0644] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 16:47:07:0383] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 16:47:07:0383] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 16:47:07:0384] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 16:47:07:0384] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 16:47:07:0384] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 16:47:07:0384] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 16:47:07:0384] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 16:47:07:0384] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 16:47:07:0384] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 16:47:07:0385] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 16:47:07:0385] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 16:47:07:0386] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 16:47:07:0387] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 16:47:07:0387] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 16:47:07:0388] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 16:47:07:0388] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 16:47:07:0388] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 16:47:07:0389] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 16:47:07:0389] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 16:47:07:0389] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 16:47:07:0389] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 16:47:07:0389] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 16:47:07:0389] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 16:47:07:0390] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 16:47:07:0390] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 16:47:07:0426] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 16:47:07:0427] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 16:47:07:0427] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 16:47:16:0045] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [2960].
+[2022-07-05 16:50:50:0989] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 16:50:51:0106] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 16:50:51:0106] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 16:50:51:0106] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 16:50:51:0106] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 16:50:51:0106] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 16:50:51:0106] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 16:50:51:0106] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 16:50:52:0939] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 16:50:52:0939] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 16:50:52:0939] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 16:50:52:0939] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 16:50:52:0939] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 16:50:53:0196] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 17:13:17:0879] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 17:13:17:0880] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 17:13:17:0880] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 17:13:17:0880] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 17:13:17:0880] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 17:13:17:0880] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 17:13:17:0880] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 17:13:17:0913] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 17:13:17:0919] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 17:13:17:0919] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 17:13:17:0919] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 17:13:17:0919] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 17:13:17:0919] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 17:13:17:0932] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 17:13:17:0932] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 17:13:17:0932] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 17:13:17:0932] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 17:13:17:0932] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 17:13:18:0213] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 17:13:18:0213] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 17:13:18:0213] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 17:13:18:0214] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 17:13:18:0214] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 17:13:18:0214] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 17:13:18:0214] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 17:13:19:0739] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 17:13:19:0739] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 17:13:19:0740] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 17:13:19:0741] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 17:13:19:0741] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 17:13:19:0741] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 17:13:19:0742] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:13:19:0742] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 17:13:19:0742] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:13:19:0742] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:13:19:0742] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:13:19:0742] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:13:19:0742] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 17:13:19:0743] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 17:13:19:0743] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 17:13:19:0744] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 17:13:19:0744] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 17:13:19:0744] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 17:13:19:0744] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 17:13:19:0744] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 17:13:19:0745] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:13:19:0745] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 17:13:19:0745] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 17:13:19:0745] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:13:19:0745] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 17:13:19:0746] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L5747: [HfrMallocOutputBuffer] begin.
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L5796: [HfrMallocOutputBuffer] end.
+[2022-07-05 17:13:19:0746] | Info     | Manager.cpp              -L1982: [Start] IsHFRProfileMode.
+[2022-07-05 17:13:19:0781] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 17:13:19:0781] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 17:13:19:0781] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 17:13:25:0838] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [3024].
+[2022-07-05 17:22:20:0800] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:22:20:0805] | Error    | CameraModule.cpp         -L0891: camera module MV_CC_StopGrabbing fail, nRet:[0x80000206].
+[2022-07-05 17:22:20:0805] | Error    | Manager.cpp              -L2051: [MV_STA_Stop] StopGrabbing failed. nRet[0x80010206]. 
+[2022-07-05 17:22:26:0769] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:22:26:0769] | Error    | CameraModule.cpp         -L0891: camera module MV_CC_StopGrabbing fail, nRet:[0x80000003].
+[2022-07-05 17:22:26:0769] | Error    | Manager.cpp              -L2051: [MV_STA_Stop] StopGrabbing failed. nRet[0x80010003]. 
+[2022-07-05 17:22:29:0476] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:22:29:0476] | Error    | CameraModule.cpp         -L0891: camera module MV_CC_StopGrabbing fail, nRet:[0x80000003].
+[2022-07-05 17:22:29:0476] | Error    | Manager.cpp              -L2051: [MV_STA_Stop] StopGrabbing failed. nRet[0x80010003]. 
+[2022-07-05 17:26:19:0132] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 17:26:19:0133] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 17:26:19:0133] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 17:26:19:0133] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 17:26:19:0133] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 17:26:19:0133] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 17:26:19:0133] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 17:26:19:0165] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 17:26:19:0173] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 17:26:19:0173] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 17:26:19:0173] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 17:26:19:0173] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 17:26:19:0173] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 17:26:19:0186] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 17:26:19:0186] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 17:26:19:0186] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 17:26:19:0186] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 17:26:19:0186] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 17:26:19:0462] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 17:26:19:0462] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 17:26:19:0462] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 17:26:19:0462] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 17:26:19:0462] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 17:26:19:0462] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 17:26:19:0462] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 17:26:21:0756] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 17:26:21:0757] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:26:21:0758] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:26:21:0759] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:26:21:0759] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 17:26:21:0760] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 17:26:21:0760] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 17:26:21:0761] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 17:26:21:0761] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 17:26:21:0761] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 17:26:21:0761] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 17:26:21:0761] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 17:26:21:0762] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:26:21:0762] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 17:26:21:0762] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 17:26:21:0762] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:26:21:0762] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:26:21:0762] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:26:21:0763] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 17:26:21:0763] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 17:26:21:0763] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 17:26:21:0763] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 17:26:21:0763] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 17:26:21:0797] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 17:26:21:0798] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 17:26:21:0798] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 17:26:31:0652] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [3072].
+[2022-07-05 17:28:15:0073] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[3133] to [3135].
+[2022-07-05 17:28:15:0524] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[3135] to [3144].
+[2022-07-05 17:28:15:0978] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[3144] to [3153].
+[2022-07-05 17:28:16:0434] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[3153] to [3162].
+[2022-07-05 17:28:16:0903] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[3162] to [3171].
+[2022-07-05 17:28:17:0374] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[3171] to [3180].
+[2022-07-05 17:28:17:0848] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[3180] to [3186].
+[2022-07-05 17:29:13:0653] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:29:13:0770] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 17:29:13:0770] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:29:13:0770] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:29:13:0770] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 17:29:13:0770] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 17:29:13:0770] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 17:29:13:0770] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 17:29:15:0011] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 17:29:15:0011] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:29:15:0011] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 17:29:15:0011] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 17:29:15:0011] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 17:29:15:0229] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 17:35:47:0013] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 17:35:47:0013] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 17:35:47:0013] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 17:35:47:0013] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 17:35:47:0013] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 17:35:47:0013] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 17:35:47:0013] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 17:35:47:0052] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 17:35:47:0058] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 17:35:47:0058] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 17:35:47:0058] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 17:35:47:0058] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 17:35:47:0058] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 17:35:47:0072] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 17:35:47:0072] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 17:35:47:0072] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 17:35:47:0072] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 17:35:47:0072] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 17:35:47:0371] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 17:35:47:0372] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 17:35:47:0372] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 17:35:47:0372] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 17:35:47:0372] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 17:35:47:0372] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 17:35:47:0372] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 17:35:48:0492] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 17:35:48:0493] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 17:35:48:0494] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 17:35:48:0494] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 17:35:48:0494] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 17:35:48:0494] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:35:48:0494] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 17:35:48:0494] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:35:48:0495] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:35:48:0495] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:35:48:0495] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:35:48:0495] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 17:35:48:0496] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 17:35:48:0496] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 17:35:48:0497] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 17:35:48:0497] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 17:35:48:0497] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 17:35:48:0497] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 17:35:48:0497] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 17:35:48:0498] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:35:48:0498] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 17:35:48:0498] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 17:35:48:0498] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:35:48:0498] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:35:48:0498] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:35:48:0499] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 17:35:48:0499] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 17:35:48:0499] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 17:35:48:0499] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 17:35:48:0499] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 17:35:48:0499] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 17:35:48:0499] | Info     | Manager.cpp              -L5747: [HfrMallocOutputBuffer] begin.
+[2022-07-05 17:35:48:0536] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 17:35:48:0537] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 17:35:48:0537] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 17:35:55:0102] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [3228].
+[2022-07-05 17:37:53:0631] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 17:37:53:0632] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 17:37:53:0632] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 17:37:53:0632] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 17:37:53:0632] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 17:37:53:0632] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 17:37:53:0632] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 17:37:53:0664] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 17:37:53:0670] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 17:37:53:0670] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 17:37:53:0670] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 17:37:53:0670] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 17:37:53:0670] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 17:37:53:0682] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 17:37:53:0682] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 17:37:53:0682] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 17:37:53:0682] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 17:37:53:0682] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 17:37:53:0985] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 17:37:53:0987] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 17:37:53:0987] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 17:37:53:0987] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 17:37:53:0987] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 17:37:53:0987] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 17:37:53:0987] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 17:37:55:0441] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 17:37:55:0441] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 17:37:55:0442] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 17:37:55:0443] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 17:37:55:0443] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 17:37:55:0443] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 17:37:55:0444] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:37:55:0444] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 17:37:55:0444] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:37:55:0444] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:37:55:0444] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:37:55:0444] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:37:55:0445] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 17:37:55:0445] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 17:37:55:0445] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 17:37:55:0446] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 17:37:55:0446] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:37:55:0447] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:37:55:0448] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:37:55:0448] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 17:37:55:0448] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 17:37:55:0448] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 17:37:55:0448] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 17:37:55:0448] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 17:37:55:0448] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 17:37:55:0448] | Info     | Manager.cpp              -L5747: [HfrMallocOutputBuffer] begin.
+[2022-07-05 17:37:55:0483] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 17:37:55:0483] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 17:37:55:0483] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 17:37:58:0972] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [3233].
+[2022-07-05 17:38:28:0531] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:38:28:0648] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 17:38:28:0648] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:38:28:0648] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:38:28:0648] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 17:38:28:0648] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 17:38:28:0648] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 17:38:28:0648] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 17:38:29:0740] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 17:38:29:0740] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:38:29:0740] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 17:38:29:0740] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 17:38:29:0740] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 17:38:29:0924] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 17:39:30:0031] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 17:39:30:0032] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 17:39:30:0032] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 17:39:30:0032] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 17:39:30:0032] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 17:39:30:0032] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 17:39:30:0032] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 17:39:30:0066] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 17:39:30:0072] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 17:39:30:0072] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 17:39:30:0072] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 17:39:30:0072] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 17:39:30:0072] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 17:39:30:0085] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 17:39:30:0085] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 17:39:30:0085] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 17:39:30:0085] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 17:39:30:0085] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 17:39:30:0281] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 17:39:30:0281] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 17:39:30:0281] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 17:39:30:0282] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 17:39:30:0282] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 17:39:30:0282] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 17:39:30:0282] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 17:39:31:0558] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 17:39:31:0559] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 17:39:31:0560] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 17:39:31:0560] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 17:39:31:0561] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 17:39:31:0561] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 17:39:31:0561] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:39:31:0561] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 17:39:31:0561] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:39:31:0561] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:39:31:0561] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:39:31:0562] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:39:31:0562] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 17:39:31:0563] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 17:39:31:0563] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 17:39:31:0564] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 17:39:31:0564] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 17:39:31:0564] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 17:39:31:0564] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 17:39:31:0564] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 17:39:31:0564] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:39:31:0564] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 17:39:31:0565] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 17:39:31:0565] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:39:31:0565] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:39:31:0565] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:39:31:0565] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 17:39:31:0566] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 17:39:31:0566] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 17:39:31:0566] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 17:39:31:0566] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 17:39:31:0566] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 17:39:31:0566] | Info     | Manager.cpp              -L5747: [HfrMallocOutputBuffer] begin.
+[2022-07-05 17:39:31:0601] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 17:39:31:0602] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 17:39:31:0602] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 17:39:37:0146] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [3242].
+[2022-07-05 17:39:57:0619] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:39:57:0737] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 17:39:57:0737] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:39:57:0737] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:39:57:0737] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 17:39:57:0737] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 17:39:57:0737] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 17:39:57:0737] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 17:39:58:0584] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 17:39:58:0584] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:39:58:0584] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 17:39:58:0584] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 17:39:58:0584] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 17:39:58:0693] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 17:39:58:0704] | Info     | CameraModule.cpp         -L0541: [DeInit] MV_CC_DestroyHandle success.
+[2022-07-05 17:39:58:0704] | Info     | CameraModule.cpp         -L0553: [DeInit] end success.
+[2022-07-05 17:39:58:0704] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 17:39:58:0704] | Info     | CameraModule.cpp         -L0553: [DeInit] end success.
+[2022-07-05 17:40:57:0989] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 17:40:57:0990] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 17:40:57:0990] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 17:40:57:0990] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 17:40:57:0990] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 17:40:57:0990] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 17:40:57:0990] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 17:40:58:0023] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 17:40:58:0029] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 17:40:58:0029] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 17:40:58:0029] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 17:40:58:0029] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 17:40:58:0029] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 17:40:58:0041] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 17:40:58:0041] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 17:40:58:0041] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 17:40:58:0041] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 17:40:58:0041] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 17:40:58:0346] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 17:40:58:0347] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 17:40:58:0347] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 17:40:58:0347] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 17:40:58:0347] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 17:40:58:0347] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 17:40:58:0347] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 17:40:59:0423] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 17:40:59:0424] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:40:59:0425] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 17:40:59:0426] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 17:40:59:0426] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 17:40:59:0427] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 17:40:59:0427] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 17:40:59:0427] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 17:40:59:0427] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 17:40:59:0427] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 17:40:59:0427] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:40:59:0427] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 17:40:59:0428] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 17:40:59:0428] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:40:59:0428] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:40:59:0428] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:40:59:0428] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 17:40:59:0428] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 17:40:59:0428] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 17:40:59:0428] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 17:40:59:0428] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:40:59:0428] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:40:59:0428] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 17:40:59:0428] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 17:40:59:0429] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 17:40:59:0429] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:40:59:0429] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:40:59:0429] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 17:40:59:0429] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 17:40:59:0429] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 17:40:59:0429] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 17:40:59:0429] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 17:40:59:0429] | Info     | Manager.cpp              -L5747: [HfrMallocOutputBuffer] begin.
+[2022-07-05 17:40:59:0429] | Info     | Manager.cpp              -L5796: [HfrMallocOutputBuffer] end.
+[2022-07-05 17:40:59:0429] | Info     | Manager.cpp              -L1982: [Start] IsHFRProfileMode.
+[2022-07-05 17:40:59:0465] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 17:40:59:0465] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 17:40:59:0465] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 17:41:03:0263] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [3244].
+[2022-07-05 17:41:37:0168] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:41:37:0288] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 17:41:37:0288] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:41:37:0288] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:41:37:0288] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 17:41:37:0288] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 17:41:37:0288] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 17:41:37:0288] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 17:41:38:0494] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 17:41:38:0494] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:41:38:0494] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 17:41:38:0494] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 17:41:38:0494] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 17:41:38:0621] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.
+[2022-07-05 17:42:28:0637] | Info     | Manager.cpp              -L4029: ---------------------Start call MvStereoAppCtrl.dll start--------------------
+[2022-07-05 17:42:28:0638] | Info     | Manager.cpp              -L4033: Build Time[210514_10:28:03], SDK version[0x1030003].
+[2022-07-05 17:42:28:0638] | Info     | Manager.cpp              -L4034: MvStereoAppCtrl.dll path [C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrl.dll]
+[2022-07-05 17:42:28:0638] | Info     | Manager.cpp              -L4035: Current ExE path [C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe]
+[2022-07-05 17:42:28:0638] | Info     | Manager.cpp              -L4039: Config (C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini) exist .
+[2022-07-05 17:42:28:0638] | Info     | Manager.cpp              -L4046: DebugMode[0], nLogSize[100].
+[2022-07-05 17:42:28:0638] | Info     | Manager.cpp              -L1686: [Init] Begin.
+[2022-07-05 17:42:28:0674] | Info     | Manager.cpp              -L1751: [Init] LoadLaser3DAllFunctions success.
+[2022-07-05 17:42:28:0680] | Info     | Manager.cpp              -L1786: [Init] end success.
+[2022-07-05 17:42:28:0680] | Info     | Manager.cpp              -L0085: [BindDevice] begin.
+[2022-07-05 17:42:28:0680] | Info     | Manager.cpp              -L1645: [CreateHandle] begin.
+[2022-07-05 17:42:28:0680] | Info     | CameraModule.cpp         -L0440: [CreateHandle] begin.
+[2022-07-05 17:42:28:0680] | Info     | CameraModule.cpp         -L0464: [CreateHandle] Get Gige Sdk version:(0x3040200).
+[2022-07-05 17:42:28:0692] | Info     | CameraModule.cpp         -L0494: [CreateHandle] end success.
+[2022-07-05 17:42:28:0692] | Info     | Manager.cpp              -L1679: [CreateHandle] end success.
+[2022-07-05 17:42:28:0692] | Info     | Manager.cpp              -L0109: [BindDevice] bind device SN[00F94631315] Model[MV-DP2305-01H] ip[0xc0a801d6] SubNetmask[-256] gateway[-1062731266] AdapteIp[0xc0a8010b].
+[2022-07-05 17:42:28:0692] | Info     | Manager.cpp              -L0112: [BindDevice] end success.
+[2022-07-05 17:42:28:0692] | Info     | Manager.cpp              -L1535: [ConnectDevice] begin.
+[2022-07-05 17:42:28:0985] | Info     | CameraModule.cpp         -L0664: [RegisterDwsVolumeEventInfoCallBack] begin.
+[2022-07-05 17:42:28:0986] | Info     | CameraModule.cpp         -L0696: [RegisterDwsVolumeEventInfoCallBack] end success.
+[2022-07-05 17:42:28:0986] | Info     | Manager.cpp              -L1589: [ConnectDevice] Success register DwsVolume Event.
+[2022-07-05 17:42:28:0987] | Info     | Manager.cpp              -L1605: [ConnectDevice] Get m_nNodeCount value[3].
+[2022-07-05 17:42:28:0987] | Info     | Manager.cpp              -L1621: [ConnectDevice] Get BufferNode count from C:\Program Files (x86)\Common Files\VolumeMeasureSDK\Runtime\Win64_x64\MvStereoAppCtrlCfg.ini\BufferNode, value[30].
+[2022-07-05 17:42:28:0987] | Info     | Manager.cpp              -L1635: [ConnectDevice] success connect the camera(00F94631315) Model(MV-DP2305-01H) version(V1.1.0 210320 597852) ip(0xc0a801d6) ip type(5) AdaptIp(0xc0a8010b).
+[2022-07-05 17:42:28:0987] | Info     | Manager.cpp              -L1638: [ConnectDevice] end success.
+[2022-07-05 17:42:30:0006] | Info     | Manager.cpp              -L1940: [MV_STA_Start] begin.
+[2022-07-05 17:42:30:0006] | Info     | Manager.cpp              -L6098: [IsHFRProfileMode] Get Device3DCamerainfo Value:[16843008], nRet:[0].
+[2022-07-05 17:42:30:0007] | Info     | Manager.cpp              -L6112: [IsHFRProfileMode] Get ImageMode, Value:[4], nRet:[0].
+[2022-07-05 17:42:30:0007] | Info     | Manager.cpp              -L6120: [IsHFRProfileMode] this camera is HFR and imagemode is pointcloud mode.
+[2022-07-05 17:42:30:0007] | Info     | Manager.cpp              -L5689: [InitAlgorithm] begin.
+[2022-07-05 17:42:30:0007] | Info     | Manager.cpp              -L5490: [LoadCalHfrConfig] begin.
+[2022-07-05 17:42:30:0007] | Info     | Manager.cpp              -L5292: [LoadArithInfo] pstAbility->modu_enable value[255].
+[2022-07-05 17:42:30:0007] | Info     | Manager.cpp              -L5296: [LoadArithInfo] pstAbility->max_img_size.width value[2048].
+[2022-07-05 17:42:30:0007] | Info     | Manager.cpp              -L5297: [LoadArithInfo] pstAbility->max_img_size.height value[1152].
+[2022-07-05 17:42:30:0008] | Info     | Manager.cpp              -L5313: [LoadArithInfo] pstAbility->max_scan_rows value[500].
+[2022-07-05 17:42:30:0008] | Info     | Manager.cpp              -L5327: [LoadArithInfo] pstAbility->max_x_range value[50000].
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5342: [LoadArithInfo] pstAbility->min_x_scale value[300].
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5345: [LoadArithInfo] ability->max_system_calib_img_num value[400].
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5351: [LoadArithInfo] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5503: [LoadCalHfrConfig] loadArithInfo success.
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5509: [LoadCalHfrConfig] Get LSLScaleUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5514: [LoadCalHfrConfig] Get LSLStepDistanceUnit_Reg Value:[100], nRet:[0].
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5523: [LoadCalHfrConfig] Get LSLRIXScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:42:30:0009] | Info     | Manager.cpp              -L5530: [LoadCalHfrConfig] Get LSLRIYScale Value:[30000.000000], nRet:[0].
+[2022-07-05 17:42:30:0010] | Info     | Manager.cpp              -L5537: [LoadCalHfrConfig] Get LSLRIZScale Value:[100.000000], nRet:[0].
+[2022-07-05 17:42:30:0010] | Info     | Manager.cpp              -L5544: [LoadCalHfrConfig] Get LSLRIXOffset Value:[0], nRet:[0].
+[2022-07-05 17:42:30:0011] | Info     | Manager.cpp              -L5551: [LoadCalHfrConfig] Get LSLRIYOffset Value:[0], nRet:[0].
+[2022-07-05 17:42:30:0011] | Info     | Manager.cpp              -L5558: [LoadCalHfrConfig] Get LSLRIZOffset Value:[0], nRet:[0].
+[2022-07-05 17:42:30:0011] | Info     | Manager.cpp              -L5565: [LoadCalHfrConfig] Get LSLRIXRange Value:[50000], nRet:[0].
+[2022-07-05 17:42:30:0012] | Info     | Manager.cpp              -L5572: [LoadCalHfrConfig] Get LSLStepDistance Value:[10000.000000], nRet:[0].
+[2022-07-05 17:42:30:0012] | Info     | Manager.cpp              -L5579: [LoadCalHfrConfig] Get LSLRangeImgHeight Value:[500], nRet:[0].
+[2022-07-05 17:42:30:0012] | Info     | Manager.cpp              -L5587: [LoadCalHfrConfig] Get LSLRIOutImageType Value:[2], nRet:[0].
+[2022-07-05 17:42:30:0012] | Info     | Manager.cpp              -L5595: [LoadCalHfrConfig] Get LSL3DCoordType Value:[1], nRet:[0].
+[2022-07-05 17:42:30:0012] | Info     | Manager.cpp              -L5601: [LoadCalHfrConfig] Get in_profile_mode Value:[2].
+[2022-07-05 17:42:30:0012] | Info     | Manager.cpp              -L5606: [LoadCalHfrConfig] Get ImageMode Value:[4], nRet:[0].
+[2022-07-05 17:42:30:0012] | Info     | Manager.cpp              -L5626: [LoadCalHfrConfig] Get LSLProfileCoordXUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5638: [LoadCalHfrConfig] Get LSLProfileCoordYUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5650: [LoadCalHfrConfig] Get LSLProfileCoordZUnit Value:[1.000000], nRet:[0].
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5669: [LoadCalHfrConfig] Get XinterpEnable[0] YinterpEnable[0] XinterpNum[1] YinterpNum[1] .
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5679: [LoadCalHfrConfig] Get FilterEnable[0] WindowWidth[1].
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5682: [LoadCalHfrConfig] end.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0061: CHfrStereoVm:Init. begin.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0090: [Init] MVB3D_SENSOR_LSL_GetMemSize success.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0097: [Init] m_stHfrMemTab[0].size[93122816] m_stHfrMemTab[1].size[128].
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0114: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_Create success.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0129: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0144: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig success.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0159: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig1 success.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0182: [CHfrStereoVm::Init] MVB3D_SENSOR_LSL_SetConfig2 success.
+[2022-07-05 17:42:30:0013] | Info     | HfrStereoVm.cpp          -L0192: CHfrStereoVm:Init. end.
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5728: [InitAlgorithm] m_nNodeCount[3] nRangeImageLen[167040] nRangeIntensityLen[83584] nProfileImageLen[39321600] nProfileIntensityLen[6553600].
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5739: [InitAlgorithm] end success.
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5747: [HfrMallocOutputBuffer] begin.
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L5796: [HfrMallocOutputBuffer] end.
+[2022-07-05 17:42:30:0013] | Info     | Manager.cpp              -L1982: [Start] IsHFRProfileMode.
+[2022-07-05 17:42:30:0048] | Info     | Manager.cpp              -L2000: [MV_STA_Start] StartGrabbing success.
+[2022-07-05 17:42:30:0048] | Info     | Manager.cpp              -L2011: [MV_STA_Start] get ChunkModeActive success, value:[1].
+[2022-07-05 17:42:30:0048] | Info     | Manager.cpp              -L2020: [MV_STA_Start] end success.
+[2022-07-05 17:42:35:0594] | Warning  | Manager.cpp              -L2142: [ReceiveDataSet] error lost frameID from[0] to [3246].
+[2022-07-05 17:43:00:0755] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:43:00:0872] | Info     | Manager.cpp              -L2056: [MV_STA_Stop] Camera StopGrabbing success. 
+[2022-07-05 17:43:00:0872] | Info     | HfrStereoVm.cpp          -L0041: DeInit_. begin.
+[2022-07-05 17:43:00:0872] | Info     | HfrStereoVm.cpp          -L0056: DeInit_. end.
+[2022-07-05 17:43:00:0872] | Info     | Manager.cpp              -L6030: [HfrReleaseOutputBuffer] begin.
+[2022-07-05 17:43:00:0872] | Info     | Manager.cpp              -L6069: [HfrReleaseOutputBuffer] end.
+[2022-07-05 17:43:00:0872] | Info     | Manager.cpp              -L6749: The ReleasePointCloudData success. 
+[2022-07-05 17:43:00:0872] | Info     | Manager.cpp              -L2072: [MV_STA_Stop] end success.
+[2022-07-05 17:43:01:0808] | Info     | Manager.cpp              -L1800: [DeInit] begin.
+[2022-07-05 17:43:01:0808] | Info     | Manager.cpp              -L2028: [MV_STA_Stop] begin.
+[2022-07-05 17:43:01:0808] | Info     | Manager.cpp              -L2044: [MV_STA_Stop] The camera is already stop job. 
+[2022-07-05 17:43:01:0808] | Info     | CameraModule.cpp         -L0509: [DeInit] begin.
+[2022-07-05 17:43:01:0808] | Error    | CameraModule.cpp         -L0517: [DeInit] MV_CC_StopGrabbing failed, nRet:[0x80000003].
+[2022-07-05 17:43:01:0913] | Info     | CameraModule.cpp         -L0531: [DeInit] MV_CC_CloseDevice success.

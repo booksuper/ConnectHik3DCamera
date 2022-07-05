@@ -4,12 +4,14 @@ VTK_MODULE_INIT(vtkRenderingOpenGL);
 VTK_MODULE_INIT(vtkInteractionStyle);
 VTK_MODULE_INIT(vtkRenderingFreeType);
 
+int ConnectCamera::pc_num = 0;//类外初始化
 ConnectCamera::ConnectCamera(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
 	cloud.reset(new pcl::PointCloud<pcl::PointXYZ>);
 	viewer.reset(new pcl::visualization::PCLVisualizer("viewer", false));
+	
 	ui.pushButton_close->setEnabled(false);
 	ui.pushButton_start->setEnabled(false);
 	ui.pushButton_stop->setEnabled(false);
@@ -45,7 +47,7 @@ ConnectCamera::ConnectCamera(QWidget *parent)
 	//软触发模式下自动执行
 	connect(ui.checkBox_autoDo, &QCheckBox::clicked, this, &ConnectCamera::autoDo);
 	//connect(ui.pushButton_autoDo, &QPushButton::clicked, this, &ConnectCamera::autoDo);
-	//切换为内触发模式
+	//切换为软触发模式
 	connect(ui.pushButton_switch_soft, &QPushButton::clicked, this, &ConnectCamera::switchSoft);
 
 
@@ -286,7 +288,8 @@ void ConnectCamera::startGrab()
 	// 创建接收 处理线程
 	/*CreateThread是c++中创建线程的函数，其中第一个参数安全设置，第二个：堆栈大小，第三个，入口函数
 	第四个，入口函数的参数，第五个启动选项。
-	这里相当于把当前窗口的主线程地址当做参数传递进去了*/
+	这里相当于把当前窗口的主线程地址当做参数传递进去了。ProcessThread其实是回调函数，负责采集数据和
+	将最原始的数据转为ply、pcd等各种标准格式数据*/
 	hProcessThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)ProcessThread, this, 0, NULL);
 	if (NULL == hProcessThread)
 	{
@@ -316,6 +319,12 @@ void ConnectCamera::startGrab()
 }
 //渲染线程，__stdcall是参数调用约定，这种约定意味着参数从右向左压入堆栈，等
 //这里拿到关键数据stImg
+//回调函数，负责采集原始数据，并且把原始数据转成ply、pcd等标准数据。里面有个while循环，会一直采集
+
+//回调函数整个步骤：首先从设备中采集最原始的数据ori，
+//然后使用getData函数将其转为标准图像数据stImg
+//接着使用MV_STA_SavePly函数将stImg转为stPlyImage,因为stPlyImage的数据实际上是unsigned char类型的
+//所以将其强转成字符串，最后再自己写一个字符串转点云的函数txt2pc
 
 void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 {
@@ -333,7 +342,7 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 	unsigned int nResultCount = 0;
 	unsigned int nMsgType;
 	int outnum = 1;
-
+	//只要不停止采集，这个循环就会一直采
 	while (pThis->m_bStartJob)
 	{
 		// 获取图像数据
@@ -385,6 +394,7 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 							//假如成功，就可以不用display函数以及与其相关联的draw函数和convert函数，可以极大精简代码
 							//还可以删除hdc显示图像的代码，然后再用pcl的库对拿到的点云进行显示
 							//2022.1.6，测试成功
+							//先从设备中取得最原始的数据，并将其转成标准图片数据
 							nRet = pThis->getData(pThis->m_handle, &stImg);
 							//nRet = pThis->Display(pThis->m_handle, pThis->m_hWndDisplay, &stImg);
 							
@@ -466,6 +476,7 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 									stPlyImage.pDstBuf = pThis->m_pcPlyDataBuf;//(nLinePntNum * nLineNum * (16*3 + 4) + 2048)
 									stPlyImage.nDstBufSize = pThis->m_MaxPlyImageSize;
 									//这一句进行数据封装，将各种格式3D图转为ply格式
+									//关键！将stImg数据封装成标准ply数据
 									nRet = MV_STA_SavePly(pThis->m_handle, &stPlyImage);
 									if (MV_STA_OK != nRet)
 									{
@@ -494,10 +505,12 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 									res.append(reinterpret_cast<const char*>(str));
 									QString r = QString::fromStdString(res);
 									//后续要自己写一个读取txt为点云对象的函数
-									ConnectCamera::txt2pc(res, pThis->cloud);
+									//ConnectCamera::txt2pc(res, pThis->cloud);
+									//叠加多条点云
+									ConnectCamera::txt2MutiPc(res, 100,pThis->cloud);
+
 									//这个线程会不断执行，将可视化放在这试一试，测试之后会报错
 									//还是另外开辟一个线程执行可视化
-									
 									//pThis->viewer->setBackgroundColor(0, 0, 0);
 									//pcl::visualization::PointCloudColorHandlerGenericField<pcl::PointXYZ> render_color(pThis->cloud, "z");
 									////pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> color(pThis->cloud, 1, 0, 0);
@@ -508,19 +521,6 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 									//pThis->viewer->setupInteractor(pThis->ui.qvtkWidget->GetInteractor(), pThis->ui.qvtkWidget->GetRenderWindow());
 									//pThis->ui.qvtkWidget->update();
 									//pThis->viewer->removePointCloud("cloud");
-									
-									
-									/*pfile = fopen(filename, "wb");
-									if (pfile == NULL)
-									{
-										QMessageBox::about(this, "warning!", "Open file failed");
-
-										throw nRet;
-									}
-
-									fwrite(stPlyImage.pDstBuf, 1, stPlyImage.nDstBufLen, pfile);
-									fclose(pfile);
-									pfile = NULL;*/
 
 								}
 								catch (...)
@@ -567,17 +567,13 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 							//		stPlyImage.pSrcData = stImage.pNormalizedData;
 							//		stPlyImage.nSrcDataLen = stImage.nNormalizedLen;
 							//		stPlyImage.enSrcPixelType = STC_PixelType_Gvsp_Coord3D_ABC32;
-
-
 							//		int nLenTmp = (stPlyImage.nLinePntNum *  stPlyImage.nLineNum *(16 * 3 + 4)) + 2048;
-
 							//		if (m_MaxPlyImageSize < nLenTmp)
 							//		{
 							//			if (m_pcPlyDataBuf)
 							//			{
 							//				free(m_pcPlyDataBuf);
 							//			}
-
 							//			m_pcPlyDataBuf = (unsigned char*)malloc(nLenTmp);
 							//			if (NULL == m_pcDataBuf)
 							//			{
@@ -585,29 +581,23 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 							//				cstrInfo = "malloc failed";
 							//				throw nRet;
 							//			}
-
 							//			m_MaxPlyImageSize = nLenTmp;
 							//			memset(m_pcPlyDataBuf, 0, m_MaxPlyImageSize);
 							//		}
-
-
 							//		stPlyImage.pDstBuf = m_pcPlyDataBuf;//(nLinePntNum * nLineNum * (16*3 + 4) + 2048)
 							//		stPlyImage.nDstBufSize = m_MaxPlyImageSize;
-
 							//		nRet = MV_STA_SavePly(m_handle, &stPlyImage);
 							//		if (MV_STA_OK != nRet)
 							//		{
 							//			cstrInfo = "MV_STA_SavePly failed";
 							//			throw nRet;
 							//		}
-
 							//		pfile = fopen(filename, "wb");
 							//		if (pfile == NULL)
 							//		{
 							//			cstrInfo = "Open file failed";
 							//			throw nRet;
 							//		}
-
 							//		fwrite(stPlyImage.pDstBuf, 1, stPlyImage.nDstBufLen, pfile);
 							//		fclose(pfile);
 							//		pfile = NULL;
@@ -618,7 +608,6 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 							//		QMessageBox::about(this, "Warning", cstrInfo);
 							//		return;
 							//	}
-
 							//	m_criSection.Unlock();
 							//}
 							/*else
@@ -627,9 +616,6 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 								QMessageBox::about(this, "Warning", cstrInfo);
 								return;
 							}*/
-
-
-							
 
 							if (MV_STA_OK != nRet)
 							{
@@ -741,8 +727,6 @@ void * __stdcall ConnectCamera::ProcessThread(void * pUser)
 		}
 		outnum++;
 	}
-
-
 	printf("stop recv  !\r\n");
 }
 #endif
@@ -1874,13 +1858,14 @@ void ConnectCamera::showPc()
 	ui.pushButton_showImg->setEnabled(true);
 	ui.pushButton_closeImg->setEnabled(true);
 
-	viewer->setBackgroundColor(0, 0, 0);
+	viewer->setBackgroundColor(0.5, 0.5, 0.5);
 	
 	//float coeff = getCoordinate(cloud);
-	//viewer->addCoordinateSystem(coeff);
+	viewer->addCoordinateSystem(4000);
 	//按照某个轴的数值对点云进行渲染，蓝色为极大值，红色为极小值
-	pcl::visualization::PointCloudColorHandlerGenericField<pcl::PointXYZ> render_color(cloud, "z");
+	pcl::visualization::PointCloudColorHandlerGenericField<pcl::PointXYZ> render_color(cloud, "x");
 	viewer->addPointCloud(cloud, render_color, "cloud");
+	//更新显示的点云
 	viewer->updatePointCloud(cloud, render_color,"cloud");
 	
 	//viewer->initCameraParameters();
@@ -1889,6 +1874,36 @@ void ConnectCamera::showPc()
 	ui.qvtkWidget->update();
 	
 
+}
+//txt转多条点云叠加
+void ConnectCamera::txt2MutiPc(string txt,float step, pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_)
+{
+	pcl::PointCloud<pcl::PointXYZ>::Ptr new_cloud(new pcl::PointCloud<pcl::PointXYZ>());
+	//将string转为qstring，这样方便后面操作，qstring中提供了很多方法
+	QString qtxt = QString::fromStdString(txt);
+	//将string按照换行符进行分割，保存在一个QStringList中，其实相当于vector<string>,可以用数组方式索引
+	QStringList qtxtlist = qtxt.split("\n");
+	//ply文件中第四行是存储元素个数的信息，将其提取出来，并按照空格分割，这样数字部分就在该list的第二个索引中
+	QStringList qsizelist = qtxtlist[3].split(" ");
+	//讲元素个数提取出来赋予点云对象
+	int points_size = qsizelist[2].toInt();
+	new_cloud->height = 1;
+	new_cloud->width = points_size;
+	new_cloud->resize(new_cloud->height * new_cloud->width);
+
+	for (int i = 0; i < new_cloud->size(); i++)
+	{
+		//坐标是从第八行开始的，所以索引加个8
+		QStringList datalist = qtxtlist[i + 8].split(" ");
+		//每一行代表一个点的三维坐标，提取出来并存到点云对象中
+		new_cloud->points[i].x = datalist[0].toDouble();
+		new_cloud->points[i].y = pc_num * step;//y轴方向上累加
+		new_cloud->points[i].z = datalist[2].toDouble();
+
+	}
+	//叠加点云
+	*cloud_ = *cloud_ + *new_cloud;
+	pc_num++;
 }
 
 void ConnectCamera::showPcThread()
@@ -1903,6 +1918,9 @@ void ConnectCamera::closePc()
 	viewer->removeAllPointClouds();
 	viewer->removeAllShapes();
 	viewer->removeAllCoordinateSystems();
+	//同时将点云清空
+	cloud->clear();
+	pc_num = 0;
 	//viewer->updatePointCloud("cloud");
 
 	//总是会报错，不知道啥原因，暂时就用上面的语句来刷新整个窗口
@@ -1938,7 +1956,7 @@ void ConnectCamera::savePcd()
 
 
 }
-
+//执行一次
 void ConnectCamera::doOnce()
 {
 	//软触发模式下执行一次
@@ -1948,6 +1966,8 @@ void ConnectCamera::doOnce()
 		QMessageBox::about(this, "warning!", "Execute Once failed! err code:" + QString::number(nRet));
 		
 	}
+	//采集一次之后需要更新显示的点云
+	showPc();
 
 }
 

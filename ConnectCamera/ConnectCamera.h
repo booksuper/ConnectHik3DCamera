@@ -82,10 +82,13 @@ public:
 	void savePly();
 	//关闭设备
 	void closeDevice();
-	//读取字符串为点云对象
+	//读取字符串为点云对象,一次只能读一条点云
     static void txt2pc(string txt,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_);
 	//显示点云图
 	void showPc();
+	//txt转点云，可以叠加多条点云
+	static void txt2MutiPc(string txt,float step,pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_);
+	
 	//
 	void showPcThread();
 	//关闭点云图
@@ -156,4 +159,5 @@ private:
 
     #define CP_UTF7                   65000       // UTF-7 translation
     #define CP_UTF8                   65001       // UTF-8 translation
+	static int pc_num;//用来记录是第几个点云，在txt2MutiPc函数中用到,得在类外初始化
 };
