@@ -26,7 +26,7 @@
 #include <pcl/visualization/pcl_visualizer.h>
 #include <sstream>
 #include <vector>
-//#include <qthread.h>
+#include <thread>
 
 
 using namespace std;
@@ -99,6 +99,12 @@ public:
 	void doOnce();
 	//自动执行
 	void autoDo();
+	//自动执行按钮点击后执行的函数
+	void autoDo_button();
+	//复选框状态改变函数,控制checkBoxState这个变量值与复选框状态同步
+	void checkbox_autodo();
+	//线程函数，一直发送采集信号
+	void autoDo_CallBack();
 	//切换内触发模式
 	void switchInside();
 	//切换为软触发模式
@@ -160,4 +166,6 @@ private:
     #define CP_UTF7                   65000       // UTF-7 translation
     #define CP_UTF8                   65001       // UTF-8 translation
 	static int pc_num;//用来记录是第几个点云，在txt2MutiPc函数中用到,得在类外初始化
+	static int checkBoxState;//用来记录复选框的状态
+	static int autodo_thread_over;//采集数据的线程结束标志
 };

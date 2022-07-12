@@ -5,5 +5,5 @@
 c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\visualization\interactor_style.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\pcl 1.8.1\include\pcl-1.8\pcl\visualization\pcl_visualizer.h(1584): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-c:\users\user\desktop\connecthik3dcamera\connectcamera\connectcamera.cpp(731): warning C4715: “ConnectCamera::ProcessThread”: 不是所有的控件路径都返回值
+c:\users\user\desktop\connecthik3dcamera\connectcamera\connectcamera.cpp(738): warning C4715: “ConnectCamera::ProcessThread”: 不是所有的控件路径都返回值
   ConnectCamera.vcxproj -> C:\Users\user\Desktop\ConnectHik3DCamera\x64\Debug\ConnectHik3DCamera.exe

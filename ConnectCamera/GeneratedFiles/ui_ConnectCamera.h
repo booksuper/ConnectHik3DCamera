@@ -68,6 +68,7 @@ public:
     QPushButton *pushButton_switch;
     QPushButton *pushButton_switch_soft;
     QPushButton *pushButton_doOnce;
+    QPushButton *pushButton_autodo;
     QCheckBox *checkBox_autoDo;
     QVTKWidget *qvtkWidget;
     QGroupBox *groupBox_6;
@@ -254,7 +255,7 @@ public:
         pushButton_switch_soft->setObjectName(QStringLiteral("pushButton_switch_soft"));
         pushButton_switch_soft->setFont(font);
 
-        gridLayout_3->addWidget(pushButton_switch_soft, 0, 1, 1, 1);
+        gridLayout_3->addWidget(pushButton_switch_soft, 0, 1, 1, 2);
 
         pushButton_doOnce = new QPushButton(groupBox_5);
         pushButton_doOnce->setObjectName(QStringLiteral("pushButton_doOnce"));
@@ -262,11 +263,17 @@ public:
 
         gridLayout_3->addWidget(pushButton_doOnce, 1, 0, 1, 1);
 
+        pushButton_autodo = new QPushButton(groupBox_5);
+        pushButton_autodo->setObjectName(QStringLiteral("pushButton_autodo"));
+        pushButton_autodo->setFont(font);
+
+        gridLayout_3->addWidget(pushButton_autodo, 1, 1, 1, 1);
+
         checkBox_autoDo = new QCheckBox(groupBox_5);
         checkBox_autoDo->setObjectName(QStringLiteral("checkBox_autoDo"));
         checkBox_autoDo->setFont(font1);
 
-        gridLayout_3->addWidget(checkBox_autoDo, 1, 1, 1, 1);
+        gridLayout_3->addWidget(checkBox_autoDo, 1, 2, 1, 1);
 
         qvtkWidget = new QVTKWidget(centralWidget);
         qvtkWidget->setObjectName(QStringLiteral("qvtkWidget"));
@@ -332,7 +339,8 @@ public:
         groupBox_5->setTitle(QApplication::translate("ConnectCameraClass", "\350\247\246\345\217\221\346\250\241\345\274\217", Q_NULLPTR));
         pushButton_switch->setText(QApplication::translate("ConnectCameraClass", "\345\210\207\346\215\242\344\270\272\345\206\205\350\247\246\345\217\221", Q_NULLPTR));
         pushButton_switch_soft->setText(QApplication::translate("ConnectCameraClass", "\345\210\207\346\215\242\344\270\272\350\275\257\350\247\246\345\217\221", Q_NULLPTR));
-        pushButton_doOnce->setText(QApplication::translate("ConnectCameraClass", "\346\211\247\350\241\214", Q_NULLPTR));
+        pushButton_doOnce->setText(QApplication::translate("ConnectCameraClass", "\345\215\225\346\254\241\346\211\247\350\241\214", Q_NULLPTR));
+        pushButton_autodo->setText(QApplication::translate("ConnectCameraClass", "\350\207\252\345\212\250\346\211\247\350\241\214", Q_NULLPTR));
         checkBox_autoDo->setText(QApplication::translate("ConnectCameraClass", "\350\207\252\345\212\250\346\211\247\350\241\214", Q_NULLPTR));
         groupBox_6->setTitle(QApplication::translate("ConnectCameraClass", "\345\233\276\345\203\217\346\230\276\347\244\272", Q_NULLPTR));
         pushButton_showImg->setText(QApplication::translate("ConnectCameraClass", "\346\230\276\347\244\272\345\233\276\345\203\217", Q_NULLPTR));

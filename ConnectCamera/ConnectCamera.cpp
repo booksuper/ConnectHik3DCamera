@@ -4,7 +4,9 @@ VTK_MODULE_INIT(vtkRenderingOpenGL);
 VTK_MODULE_INIT(vtkInteractionStyle);
 VTK_MODULE_INIT(vtkRenderingFreeType);
 
-int ConnectCamera::pc_num = 0;//类外初始化
+int ConnectCamera::pc_num = 0;//点云数量
+int ConnectCamera::checkBoxState = 0;//复选框状态标志
+int ConnectCamera::autodo_thread_over = 1;//采集数据线程结束标志
 ConnectCamera::ConnectCamera(QWidget *parent)
 	: QMainWindow(parent)
 {
@@ -45,8 +47,11 @@ ConnectCamera::ConnectCamera(QWidget *parent)
 	//软触发模式下执行一次
 	connect(ui.pushButton_doOnce, &QPushButton::clicked, this, &ConnectCamera::doOnce);
 	//软触发模式下自动执行
-	connect(ui.checkBox_autoDo, &QCheckBox::clicked, this, &ConnectCamera::autoDo);
-	//connect(ui.pushButton_autoDo, &QPushButton::clicked, this, &ConnectCamera::autoDo);
+	//clicked信号是你只要点击了复选框就会发送信号，这意味着当你取消勾选的时候也会发送信号
+	//所以另外设置一个按钮，通过点击这个按钮来实现启动采集的线程
+	connect(ui.pushButton_autodo, &QPushButton::clicked, this, &ConnectCamera::autoDo_button);
+	//复选框状态
+	connect(ui.checkBox_autoDo, &QCheckBox::clicked, this, &ConnectCamera::checkbox_autodo);
 	//切换为软触发模式
 	connect(ui.pushButton_switch_soft, &QPushButton::clicked, this, &ConnectCamera::switchSoft);
 
@@ -278,7 +283,8 @@ void ConnectCamera::startGrab()
 		m_bStartJob = false;
 		// 等待线程完成，如果是多线程的，需要调用 WaitForMultipleObjects
 		WaitForSingleObject(hProcessThread, INFINITE);
-		// 最后关闭句柄
+		//CloseHandle是关闭线程句柄,用来释放线程资源的,不是终止线程的
+		// 做完一次记得释放一次线程资源
 		CloseHandle(hProcessThread);
 		hProcessThread = NULL;
 	}
@@ -287,8 +293,9 @@ void ConnectCamera::startGrab()
 	m_bStartJob = true;
 	// 创建接收 处理线程
 	/*CreateThread是c++中创建线程的函数，其中第一个参数安全设置，第二个：堆栈大小，第三个，入口函数
-	第四个，入口函数的参数，第五个启动选项。
-	这里相当于把当前窗口的主线程地址当做参数传递进去了。ProcessThread其实是回调函数，负责采集数据和
+	第四个，入口函数的参数，这个是类内成员函数，本身函数有一个void*指针，这里相当于把当前窗口的主线程
+	地址当做参数传递进去了。第五个启动选项。
+	ProcessThread其实是回调函数，负责采集数据和
 	将最原始的数据转为ply、pcd等各种标准格式数据*/
 	hProcessThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)ProcessThread, this, 0, NULL);
 	if (NULL == hProcessThread)
@@ -1959,6 +1966,7 @@ void ConnectCamera::savePcd()
 //执行一次
 void ConnectCamera::doOnce()
 {
+	
 	//软触发模式下执行一次
 	int nRet = MV_STA_SetCommandValue(m_handle, "TriggerSoftware");
 	if (MV_STA_OK != nRet)
@@ -1981,9 +1989,22 @@ void ConnectCamera::autoDo()
 		//暂时找不到海康自动的自动执行的命令，只能自己写个循环不断执行
 		//但这里需要把它放在另一个线程，不然再次点击复选框会没反应的
 		//2022.1.8,测试显示，开启之后，虽然确实是在自动执行，但却堵塞了其他线程，需要另开一个线程
+		//2022706,使用count计数，当count大于指定数字之后，就跳出循环，然后再执行一次显示点云，这样就不会卡死了
+		//但这种方式无法实际应用。海康威视软件上实现过程是，当用户点击自动运行之后，相机就会按照指定的帧率一直采集数据，当
+		//采集到指定的数量时，就将点云渲染出来，在这个过程中，点云不是动态增加的。
+		//我们想要实现的方案是：当用户点击自动运行之后，相机按照指定帧率采集，同时一边采集，窗口还会一边动态显示
+		//这里必须用到多线程编程，具体步骤：用户点击自动运行之后，新建一个线程，这个线程会一直给相机发送采集信号
+		//发了信号之后，前面的采集线程会采集数据。如果这里要动态显示点云，必须使用主线程来显示，但要动态显示的话
+		//就必须一直循环，而这样还是会使整个界面卡死，怎么办？继续使用一个计数变量，如果点云数达到指定数量，就让
+		//显示线程跳出循环
+		int count = 0;
 		while (ui.checkBox_autoDo->isChecked())
 		{
-			//Sleep(100);
+			if (count > 100)
+			{
+				break;
+			}
+			Sleep(10);
 			if (ui.checkBox_autoDo->isChecked())
 			{
 				nRet = MV_STA_SetCommandValue(m_handle, "TriggerSoftware");
@@ -1992,6 +2013,8 @@ void ConnectCamera::autoDo()
 					QMessageBox::about(this, "warning!", "Execute Once failed! err code:" + QString::number(nRet));
 					break;
 				}
+				
+				count++;
 			}
 			else
 			{
@@ -2000,6 +2023,7 @@ void ConnectCamera::autoDo()
 			
 			
 		}
+		showPc();
 
 	}
 	else
@@ -2008,8 +2032,105 @@ void ConnectCamera::autoDo()
 
 	}
 #endif
-	
+	//类型转换无效
+	/*typedef void  (*CallBack_Pointer) (void *);
+	CallBack_Pointer call_pointer = (CallBack_Pointer) (&ConnectCamera::autoDo_CallBack);
+	std::thread autoStart(call_pointer);*/
+	//不报错，但逻辑不知道对不对
 
+	std::thread autoStart(&ConnectCamera::autoDo_CallBack, this);
+	//先用join的方式堵塞主线程，这意味着在采集数据的时候，主线程将会等待，直到用户取消采集数据
+	//堵塞后发现点击不了界面了，直接卡死，还是得用分离线程
+	//autoStart.join();
+	//尽量不用分离线程的方式，不可控，容易出bug
+	//分离线程之后，界面没有卡死，但是报错说控件不能在不同的线程之间共享数据
+	//拿到数据了，但是他没法在qvtk控件中实时显示
+	autoStart.detach();
+	//QMessageBox::about(this, "warning", "clicked");
+
+}
+void ConnectCamera::autoDo_button()
+{
+	//将本身按钮
+	if (ui.checkBox_autoDo->isChecked())
+	{
+		//不能重复点击自动执行按钮，不然会挂起多个线程，所以点击一次之后要将其置为不可选
+		ui.pushButton_doOnce->setEnabled(false);
+		ui.pushButton_autodo->setEnabled(false);
+		autoDo();
+	}
+	else
+	{
+		QMessageBox::about(this, "warning", QString::fromLocal8Bit("请勾选自动执行复选框"));
+	}
+	
+}
+//复选框状态改变函数,控制checkBoxState这个变量值与复选框状态同步
+//使用这个中间变量来解决子线程中无法操作控件的问题
+void ConnectCamera::checkbox_autodo()
+{
+	if (ui.checkBox_autoDo->isChecked())
+	{
+		checkBoxState = 1;
+	}
+	else
+	{
+		checkBoxState = 0;
+		//子线程要结束了，这时候应该把单次执行和自动执行按钮都置为可选
+		
+		if (!ui.pushButton_autodo->isEnabled())
+		{
+			ui.pushButton_autodo->setEnabled(true);
+		}
+		if (!ui.pushButton_doOnce->isEnabled())
+		{
+			ui.pushButton_doOnce->setEnabled(true);
+		}
+		//数据采集完了，得开始显示
+		//显示的时候，只显示了一部分点云，再点击一次单次执行，就把数据全部显示了，不知为啥
+		//休眠一会，等采集数据的线程把数据采完,这样还是不行，使用线程结束标志来精准控制
+		//只有线程结束之后，才显示点云
+		//线程没结束就会一直卡在这个循环里
+		//还是一样问题，我是等线程结束之后才显示点云的，为什么还是这样
+		//有可能是叠加点云的线程滞后于发送采集信号的线程
+		while (autodo_thread_over)
+		{
+
+		}
+		//发送采集信号的线程结束之后，再等4秒，等叠加点云的线程把数据叠加完
+		//这样做之后基本没问题了，但又有一个新问题
+		//保存的点云显示有800多条线，实际上确实也有那么多行，但显示出来就只有60多条，而且点云中的y最大也就5900
+		//估计还是信号线程和采集线程的之间同步的问题
+		Sleep(4000);
+		showPc();
+
+	}
+}
+//类内成员函数无法当 做回调函数，需要解决
+//使用thread类，第二个参数只需要传类的对象就行，这里也就是this
+void ConnectCamera::autoDo_CallBack()
+{
+	//子线程中不应该操作控件
+	int nRet;
+	while (checkBoxState)
+	{
+		if (checkBoxState)
+		{
+			nRet = MV_STA_SetCommandValue(m_handle, "TriggerSoftware");
+			if (MV_STA_OK != nRet)
+			{
+				QMessageBox::about(this, "warning!", "Execute Once failed! err code:" + QString::number(nRet));
+				break;
+			}
+
+		}
+		else
+		{
+			break;
+		}
+	}
+	autodo_thread_over = 0;
+	
 }
 
 void ConnectCamera::switchSoft()
